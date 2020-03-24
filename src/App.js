@@ -37,12 +37,15 @@ export default class App extends Component {
     };
       render() {
         return(
-          <div>
+          <div className="App">
             <header>
               <h1>ELF Computing | Laptops</h1>
             </header>
-            <Customize selected={this.state.selected} update={this.updateFeature} conversion={USCurrencyFormat} store={this.props.store}/>
-            <Checkout selected={this.state.selected}  update={this.updateFeature} conversion={USCurrencyFormat} store={this.props.store}/>
+            <main>
+              <Customize selected={this.state.selected} update={this.updateFeature} conversion={USCurrencyFormat} store={this.props.store}/>
+              <Checkout selected={this.state.selected}  update={this.updateFeature} conversion={USCurrencyFormat} store={this.props.store}/>
+            </main>
+            
           </div>
         )
   }
