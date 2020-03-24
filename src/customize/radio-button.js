@@ -26,7 +26,7 @@ export default class RadioButton extends Component {
             )
         })
         return(
-            {item}
+            item
         )
     }
 }
