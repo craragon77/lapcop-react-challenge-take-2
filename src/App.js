@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import Checkout from './checkout/checkout';
 import Customize from './customize/customize';
+import './App.css'
 
 const USCurrencyFormat = new Intl.NumberFormat('en-US', {
   style: 'currency',

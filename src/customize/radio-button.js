@@ -6,7 +6,7 @@ export default class RadioButton extends Component {
     render () {
         const item = this.props.store[this.props.feature].map((i) =>{
             console.log(i.name)
-            const itemHash = slugify(JSON.stringify(this.props.featureHash));
+            const itemHash = slugify(JSON.stringify(i));
             return (
                 <div key={itemHash} className="feature__item">
                     <input
