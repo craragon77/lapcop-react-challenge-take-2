@@ -9,7 +9,7 @@ export default class Total extends Component {
           console.log(total)
         return(
             <div className="summary__total__value">
-                <p>Total: {total}</p>
+                <p>Total: ${total} </p>
             </div>
         )
     }
